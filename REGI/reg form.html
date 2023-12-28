@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form id="registrationForm" action="submit.php" method="post">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required oninput="capitalizeFirstName(this)"><br>
+    
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br>
+    
+        <label for="course">Course:</label><br>
+        <select id="course" name="course">
+            <option value="Course 1">Course 1</option>
+            <option value="Course 2">Course 2</option>
+            <option value="Course 3">Course 3</option>
+        </select><br>
+    
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+    
+        <label for="mobileNumber">Mobile Number:</label><br>
+        <input type="text" id="mobileNumber" name="mobileNumber" required pattern="\d{10}"><br>
+    
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br>
+    
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" required></textarea><br>
+    
+        <label for="photo">Upload Photo:</label><br>
+        <input type="file" id="photo" name="photo" required><br>
+    
+        <input type="submit" value="Submit">
+    
+        <script>
+            // Function to capitalize the entire first name
+            function capitalizeFirstName(input) {
+                input.value = input.value.toUpperCase();
+            }
+        </script>
+    </form>
+    
