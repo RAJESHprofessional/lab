@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Information Form</title>
+</head>
+<body>
+
+<h2>Customer Information Form</h2>
+
+<form action="/submit_form" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="phone">Contact Phone No:</label><br>
+  <input type="tel" id="phone" name="phone" required><br><br>
+
+  <label>Preferred Days of Purchasing:</label><br>
+  <input type="checkbox" id="monday" name="preferred_days" value="Monday">
+  <label for="monday">Monday</label><br>
+  <input type="checkbox" id="tuesday" name="preferred_days" value="Tuesday">
+  <label for="tuesday">Tuesday</label><br>
+  <input type="checkbox" id="wednesday" name="preferred_days" value="Wednesday">
+  <label for="wednesday">Wednesday</label><br>
+  <input type="checkbox" id="thursday" name="preferred_days" value="Thursday">
+  <label for="thursday">Thursday</label><br>
+  <input type="checkbox" id="friday" name="preferred_days" value="Friday">
+  <label for="friday">Friday</label><br>
+  <input type="checkbox" id="saturday" name="preferred_days" value="Saturday">
+  <label for="saturday">Saturday</label><br>
+  <input type="checkbox" id="sunday" name="preferred_days" value="Sunday">
+  <label for="sunday">Sunday</label><br><br>
+
+  <label for="favourite_item">Favourite Item:</label><br>
+  <select id="favourite_item" name="favourite_item">
+    <option value="clothes">Clothes</option>
+    <option value="shoes">Shoes</option>
+    <option value="accessories">Accessories</option>
+    <option value="electronics">Electronics</option>
+    <option value="books">Books</option>
+    <option value="others">Others</option>
+  </select><br><br>
+
+  <label for="suggestions">Suggestions:</label><br>
+  <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
